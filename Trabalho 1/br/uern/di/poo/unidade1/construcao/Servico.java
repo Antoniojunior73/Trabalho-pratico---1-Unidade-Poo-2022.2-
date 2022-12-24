@@ -1,14 +1,14 @@
 package br.uern.di.poo.unidade1.construcao;
 
-//Classe para calcular o serviÁo de instalaÁ„o
+//Classe para calcular o servi√ßo de instala√ß√£o
 public class Servico {
 	
-	//DeclaraÁ„o de Constantes
-	final  static double LUXO = 1.1; //Coloquei 1.1, pois È um acrescimo ao valor total, ent„o j· realizei 100% + 10% de forma direta;
-	final  static double INSTALACAO = 70.0;
-	final  static double INSTALACAOPI = 250.0;
+	//Declara√ß√£o de Constantes
+	static final double LUXO = 1.1; //Coloquei 1.1, pois √© um acrescimo ao valor total, ent√£o j√° realizei 100% + 10% de forma direta;
+	static final double INSTALACAO = 70.0;
+	static final double INSTALACAOPI = 250.0;
 	
-	//FunÁ„o para calcular o ServiÁo de instalaÁ„o da porta
+	//Fun√ß√£o para calcular o Servi√ßo de instala√ß√£o da porta
 	public static void calculaServico(Porta portaS) {
 		
 		double metros = portaS.getAltura() * portaS.getLargura();
@@ -25,7 +25,7 @@ public class Servico {
 			valorI = metros*INSTALACAO;
 		
 		System.out.println("___________________________________________\n");
-		System.out.printf("O Valor da instalaÁ„o da porta È: R$%.2f\n", valorI);
+		System.out.printf("O Valor da instala√ß√£o da porta √©: R$%.2f\n", valorI);
 		System.out.println("___________________________________________\n");
 	}
 	
